@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#app {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.selection {
+    margin-bottom: 20px;
+}
+
+#food-select {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#add-food {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-food:hover {
+    background-color: #218838;
+}
+
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#cart-table th, #cart-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#cart-table th {
+    background-color: #28a745;
+    color: white;
+}
+
+#cart-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+#cart-table button {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#cart-table button:first-child {
+    background-color: #dc3545;
+    color: white;
+}
+
+#cart-table button:nth-child(2) {
+    background-color: #007bff;
+    color: white;
+}
+
+#cart-table button:nth-child(3) {
+    background-color: #ffc107;
+    color: black;
+}
+
+#cart-table button:nth-child(4) {
+    background-color: #dc3545;
+    color: white;
+}
+
+#total {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
