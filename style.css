@@ -6,6 +6,8 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    /* background: url("https://www.youtube.com/watch?v=QoiND_1D-3w"); */
+    /* background-size: cover; */
 }
 
 #app {
@@ -95,4 +97,75 @@ body {
     font-size: 1.2em;
     font-weight: bold;
     margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    #app {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .selection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    #food-select {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #add-food {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #cart-table {
+        overflow-x: auto;
+        display: block;
+        font-size: 0.9em;
+    }
+
+    #cart-table th, #cart-table td {
+        padding: 5px;
+        white-space: nowrap;
+    }
+
+    #cart-table button {
+        padding: 3px 6px;
+        font-size: 0.8em;
+    }
+
+    #total {
+        font-size: 1em;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    #app {
+        padding: 5px;
+    }
+
+    #food-select, #add-food {
+        max-width: 280px;
+    }
+
+    #cart-table {
+        font-size: 0.8em;
+    }
+
+    #cart-table th, #cart-table td {
+        padding: 3px;
+    }
+
+    #cart-table button {
+        padding: 2px 4px;
+        font-size: 0.7em;
+    }
 }
